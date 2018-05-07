@@ -17,8 +17,8 @@
     position: fixed;
     top: 0;
     left:0;
-    color: white;
+   
 }
-nav .brand-logo{
+nav .brand-logo, nav ul a{
     color: black;
 }
