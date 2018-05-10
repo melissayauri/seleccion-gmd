@@ -1,6 +1,6 @@
 
   $(document).ready(function(){
-    
+    $('.slider').slider();
     $('.sidenav').sidenav();
 
      // Initialize Firebase
