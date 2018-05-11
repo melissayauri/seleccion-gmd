@@ -10,11 +10,7 @@ var DATA = [
       "Responsable de la programación y desarrollo de sistemas en base a los requerimientos del cliente utilizando los programas y herramientas necesarias para un óptimo resultado.",
     funciones: [
       "Realizar la construcción o mantenimiento de aplicaciones a partir de especificaciones usando estándares de desarrollo establecidos por la organización con un alto grado de calidad y eficiencia.",
-      "Ejecutar sus tareas en base a la metodología y estándares definidos en el proyecto/servicio.",
       "Ejecutar sus tareas mediante el uso correcto de las herramientas establecidas para el proyecto/servicio.",
-      "Realizar pruebas unitarias y participar en las pruebas de integración.",
-      "Desarrollar componentes de software reusables en lenguajes de programación.",
-      "Participar en la elaboración de documentos técnicos y las especificaciones de desarrollo.",
       "Respetar y cumplir con el Reglamento interno de Trabajo y el Reglamento Interno de SST; estipulada y difundida a través de GMD y sus filiales."
     ],
     formacion: {
@@ -74,42 +70,51 @@ var DATA = [
     fecha: "14/05/2018",
     ubicacion: "Lima",
     rubro: "Tecnología - IT",
-    cargo: "Analista de sistemas"
+    cargo: "Analista de sistemas",
+    funciones:"Participar en la elaboración de documentos técnicos y las especificaciones de desarrollo."
   },
   {
     fecha: "20/05/2018",
     ubicacion: "Miraflores",
     rubro: "Tecnología - IT",
-    cargo: "Asesor de Marketing"
+    cargo: "Asesor de Marketing",
+    funciones:"Participar en la elaboración de documentos técnicos y las especificaciones de desarrollo."
   },
   {
     fecha: "11/06/2018",
     ubicacion: "Lima",
     rubro: "Tecnología - IT",
-    cargo: "Analista de datos"
+    cargo: "Analista de datos",
+    funciones:"Desarrollar componentes de software reusables en lenguajes de programación."
   },
   {
     fecha: "02/05/2018",
     ubicacion: "Lima",
     rubro: "Tecnología - IT",
-    cargo: "Analista de desarrollo humano"
+    cargo: "Analista de desarrollo humano",
+    funciones:"Desarrollar componentes de software reusables en lenguajes de programación."
+    
   },
   {
     fecha: "30/05/2018",
     ubicacion: "Miraflores",
     rubro: "Tecnología - IT",
-    cargo: "Analista de finanzas"
+    cargo: "Analista de finanzas",
+    funciones:"Ejecutar sus tareas en base a la metodología y estándares definidos en el proyecto/servicio."
   },
   {
     fecha: "01/15/2018",
     ubicacion: "Lima",
     rubro: "Tecnología - IT",
-    cargo: "Administrador de servidores"
+    cargo: "Administrador de servidores",
+    funciones: "Realizar pruebas unitarias y participar en las pruebas de integración."
+    
   },
   {
     fecha: "07/05/2018",
     ubicacion: "Lima",
     rubro: "Tecnología - IT",
-    cargo: "Especialista de soporte HD"
+    cargo: "Especialista de soporte HD",
+    funciones: "Realizar pruebas unitarias y participar en las pruebas de integración."
   },
 ];

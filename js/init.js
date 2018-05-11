@@ -4,6 +4,8 @@ $(document).ready(function() {
   $('.slider').slider();
   /* Inicializando el navbar en mobile*/
   $('.sidenav').sidenav();
+  /* */
+ 
   
 
   // Initialize Firebase
