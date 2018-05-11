@@ -42,11 +42,19 @@ nav .brand-logo, nav ul a{
 .ml{
     margin-left: 1rem;
 }
+
+mb{
+    margin-bottom: 5rem;
+}
+
+.gmd-btn{
+    margin-top: 1rem;
+}
 .search:focus{
-    border-bottom: 10px solid #03a9f4 !important;
-    -webkit-box-shadow: 0 1px 0 0 #03a9f4 !important;
-    -moz-box-shadow: 0 1px 0 0 #03a9f4 !important;
-    box-shadow: 0 1px 0 0 #03a9f4 !important;
+    border-bottom: 1px solid #1a237e !important;
+    -webkit-box-shadow: 0 1px 0 0 #1a237e !important;
+    -moz-box-shadow: 0 1px 0 0 #1a237e !important;
+    /*box-shadow: 0 1px 0 0 #1a237e !important;*/
    /* border-bottom: none!important;
   box-shadow: none!important;*/
 }
