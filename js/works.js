@@ -25,26 +25,35 @@ $(document).ready(function() {
                         <div class="collapsible-header indigo-text text-darken-4 ">
                             <i class="material-icons indigo-text text-darken-4">filter_drama</i>
                             ${ref.cargo}-${ref.ubicacion}
-                            <span class="badge btn-badge  blue  white-text btn-post" id="' +[i] + '">Postular</span>
+                           
                         </div>
                         <div class="collapsible-body justify">
                             <span class="indigo-text text-darken-4 ">${ref.funciones}</span>
                         </div>
+                        <span class="badge btn-badge  blue  white-text btn-post" id="' +[i] + '">Postular</span>
                     </li>`;
     $container.append(template);
   }
-   /* let btns = `<span class="badge btn-badge  blue  white-text btn-post" id="post">Postular</span>`;
+  /* let btns = `<span class="badge btn-badge  blue  white-text btn-post" id="post">Postular</span>`;
     let containerPost = $('.post')
     containerPost.append(btns);*/
-    let $postular = $('.btn-post');
-    $postular.on('click', postular);
-    function postular() {
+  let $postular = $('.btn-post');
+  $postular.on('click', postular);
+  function postular() {
+    if ($(this).attr('id')) {
+      //$( "#list" ).removeClass( "collapsible" )
+      alert('hola');
+    }
+    else{
+      $( "#list" ).addClass( "collapsible" )
+    }
+    /* $( "#list" ).removeClass( "collapsible" )
       var topics = $(this).attr('id');
       console.log( $(this).attr('id'))
-      alert('hola')
-      }
+      alert('hola')*/
+  }
  
-  /*let $log = $('#post');
+  /* let $log = $('#post');
     $log.on('click', logins);
     function logins() {
       alert('gdgdg')
@@ -77,7 +86,7 @@ $(document).ready(function() {
     let $loginGoogle = $('#login-gmail');
     $loginGoogle.on('click', googleLogin);
     function googleLogin() {
-      console.log('btn-gmail')
+      console.log('btn-gmail');
       /* incorporando la autenticación por gmail */
       let provider = new firebase.auth.GoogleAuthProvider();
       firebase.auth().signInWithPopup(provider).then((result) => {
@@ -94,13 +103,12 @@ $(document).ready(function() {
           photo: user.photoURL
         };
         firebase.database().ref('usuarios/' + user.uid).set(users);
-    
       };
     
       firebase.database().ref('usuarios').on('child_added', function(userInfo) {
         var users = userInfo.val();
         var names = `<div>${users.name}</div>`;
-        var images = ` <img src="${users.photo}" alt="" class="img-profile">`
+        var images = ` <img src="${users.photo}" alt="" class="img-profile">`;
         $('#root').append(names);
         $('#img-profile').append(images);
       });
