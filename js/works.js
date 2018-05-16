@@ -25,12 +25,12 @@ $(document).ready(function() {
                         <div class="collapsible-header indigo-text text-darken-4 ">
                             <i class="material-icons indigo-text text-darken-4">filter_drama</i>
                             ${ref.cargo}-${ref.ubicacion}
-                           
+                            <span class="badge btn-badge  blue  white-text btn-post" id="' +[i] + '">Postular</span>
                         </div>
                         <div class="collapsible-body justify">
                             <span class="indigo-text text-darken-4 ">${ref.funciones}</span>
                         </div>
-                        <span class="badge btn-badge  blue  white-text btn-post" id="' +[i] + '">Postular</span>
+                        
                     </li>`;
     $container.append(template);
   }
@@ -42,7 +42,7 @@ $(document).ready(function() {
   function postular() {
     if ($(this).attr('id')) {
       //$( "#list" ).removeClass( "collapsible" )
-      alert('hola');
+      alert('Primero debes registrarte');
     }
     else{
       $( "#list" ).addClass( "collapsible" )
@@ -93,7 +93,9 @@ $(document).ready(function() {
         let user = result.user;
         console.log(user);
         saveData(result.user);
+       
         window.location.assign('../views/profile.html');
+    
       });
       const saveData = (user) =>{
         let users = {
@@ -111,6 +113,7 @@ $(document).ready(function() {
         var images = ` <img src="${users.photo}" alt="" class="img-profile">`;
         $('#root').append(names);
         $('#img-profile').append(images);
+       
       });
     }
   };

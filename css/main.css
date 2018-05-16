@@ -13,6 +13,7 @@ body{
     font-weight: 
 }
 
+
 .justify{
     text-align: justify;
 }
@@ -20,7 +21,13 @@ body{
 .row .pd{
     padding: 0rem;
 }
-
+.mg{
+    margin-top: 0rem;
+}
+.mg-top{
+    margin-top: 1rem;
+}
+/* vistas*/
 img[alt="logo"]{
     height: 40px;
     margin-top: 0.5rem;
@@ -31,17 +38,21 @@ img[alt="logo"]{
     background-size: 100% 100%;
    /* width: 100vw;*/
     height: 180px;
+    text-align: justify;
 }
 
+.background h6{
+    margin-top: 2rem;
+}
 nav .brand-logo, nav ul a{
     color: black;
 }
 
 .img-profile{
-    width: 30%;
+    width: 100%;
     height: 100px;
     border-radius: 50%;
-    border: 3px solid black;
+    
 }
 
 .margin-btn{
