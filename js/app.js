@@ -37,10 +37,12 @@ $(document).ready(function() {
     console.log(photo)
     /* Bienvenida al usuario */
     let principalName = `<h5 class="white-text mg mg-top center-align">Hola, ${onlyName}</h5>`;
-    let images = ` <img src="${photo}" alt="" class="img-profile">`
-    $('#root').append(principalName, images);
-    //$('#img-profile').append(images); 
-    
+    let principalImage = ` <img src="${photo}" alt="" class="img-profile">`
+    $('#root').append(principalName, principalImage);
+    /* Sección del cv- profile */
+    let profileImage = ` <img src="${photo}" alt="" class="img">`
+    let fullName = `<p class=" center-align">${name}</p>`;
+    $('#profile').append(profileImage, fullName);
   });
 });
 
