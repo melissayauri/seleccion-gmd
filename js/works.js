@@ -88,7 +88,7 @@ $(document).ready(function() {
     function googleLogin() {
       console.log('btn-gmail');
       /* incorporando la autenticación por gmail */
-      let provider = new firebase.auth.GoogleAuthProvider();
+     let provider = new firebase.auth.GoogleAuthProvider();
       firebase.auth().signInWithPopup(provider).then((result) => {
         let user = result.user;
         console.log(user);

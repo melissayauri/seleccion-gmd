@@ -133,7 +133,7 @@ img[alt="back"]{
     
 }
 .line .row .col.s5{
-    
+    height: 100vh;
 }
 @media (min-width: 992px){
     .background{

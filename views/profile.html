@@ -36,49 +36,90 @@
       </div>
     </div>
   </section>
+  <!--bienvenida-->
   <section>
-      <div class="container">
-    <div class="row ">
-      <div class="col s3 m4">
-        <span class="indigo darken-4 white-text padding">Fase 1</span>
-      </div>
-      <div class="col s9 m8">
-        <span class="center-align mg phrase">Queremos empezar a conocerte un poco más, detalla tu cv</span>
+    <div class="container">
+      <div class="row ">
+        <div class="col s3 m4">
+          <span class="indigo darken-4 white-text padding">Fase 1</span>
+        </div>
+        <div class="col s9 m8">
+          <span class="center-align mg phrase">Queremos empezar a conocerte un poco más, detalla tu cv</span>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  <!--formularios-->
   <section class="">
     <div class="container line">
-    <div class="row">
-      <div class="col s5 m4 indigo darken-4 white-text">
-        <div id="profile">
+      <div class="row">
+        <div class="col s5 m4 indigo darken-4 white-text">
+          <div id="profile">
+          </div>
+          <form id="contacto"class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Placeholder" id="nombre" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="apellidos" type="text" class="validate">
+                <label for="apellidos">Last Name</label>
+              </div>
+            </div>
+            
+          
+          </form>
         </div>
-        <form class="mg-top">
-        <div class="input-field  mg">
-            <i class="material-icons prefix">mode_edit</i>
-            <label for="dni label-mg">dni</label>
-            <input type="text" id="dni" >
+          <div class="col s7 pd">
+              <img src="../assets/img/back.PNG" alt="back" class="">
+              <form id="contacto"class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <input placeholder="Placeholder" id="first" type="text" class="validate">
+                      <label for="first">First Name</label>
+                    </div>
+                    <div class="input-field col s12">
+                      <input id="apellidos" type="text" class="validate">
+                      <label for="apellidos">Last Name</label>
+                    </div>
+                  </div>
+                  
+                  <button class=" submit btn waves-effect waves-light" type="submit" disabled>Submit
+                  
+                    </button>         
+                </form>
+
+          </div>
+
+         
+          <!--formulario para datos personales-->
+         <!-- <form class="mg-top" id="personal-date">
+            <div class="input-field  mg">
+              <i class="material-icons prefix">mode_edit</i>
+              <label for="dni label-mg">dni</label>
+              <input type="text" id="dni" name="dni">
+            </div>
+            <div class="input-field  mg">
+              <i class="material-icons prefix">mode_edit</i>
+              <label for="phone label-mg">celular</label>
+              <input type="text" id="phone" >
+            </div>
+            <div class="input-field mg">
+              <i class="material-icons prefix">mode_edit</i>
+              <label for="date">fecha-nac</label>
+              <input type="text" id="date" >
+            </div>
+          </form>
         </div>
-        <div class="input-field  mg">
-            <i class="material-icons prefix">mode_edit</i>
-            <label for="phone label-mg">celular</label>
-            <input type="text" id="phone" >
-        </div>
-        <div class="input-field mg">
-            <i class="material-icons prefix">mode_edit</i>
-            <label for="date">fecha-nac</label>
-            <input type="text" id="date" >
-        </div>
-      </form>
-      </div>
-      <div class="col s7 m8 backg pd">
-       <img src="../assets/img/back.PNG" alt="back" class="">
-       <p class="mg-left">Estudios</p>
-         <form class="col s12 " id="form">
-            <div class="row line">
+        <div class="col s7 m8 backg pd">
+          <img src="../assets/img/back.PNG" alt="back" class="">
+          <p class="mg-left">Estudios</p>
+          
+          <form id="formulario" class="col s12 " >
+            <div class="row ">
               <div class="input-field col s12 m6">
-                  <input id="last_n" type="text" class="validate">
+                <input id="last_n" type="text" class="validate">
                 <label for="last_n">Centro de estudios</label>
               </div>
               <div class="input-field col s12 m6">
@@ -90,30 +131,87 @@
                 <label for="password">Carrera</label>
               </div>
             </div>
-            
-          </form>
-          <p class="mg-left">Estudios</p>
-          <form class="col s12 " id="form">
-             <div class="row line">
-               <div class="input-field col s12 m6">
-                   <input id="last_n" type="text" class="validate">
-                 <label for="last_n">Centro de estudios</label>
-               </div>
-               <div class="input-field col s12 m6">
-                 <input id="last_name" type="text" class="validate">
-                 <label for="last_name">Ciudad</label>
-               </div>
-               <div class="input-field col s12">
-                 <input id="password" type="text" class="validate">
-                 <label for="password">Carrera</label>
-               </div>
-             </div>
-             
-           </form>
-         <div>
-     
+          
+            <p class="mg-left">Experiencia</p>
+            <div class="row ">
+              <div class="input-field col s12 m6">
+                <input id="inst" type="text" class="validate">
+                <label for="instit">Insitución </label>
+              </div>
+              <div class="input-field col s12 m6">
+                <input id="ciudad" type="text" class="validate">
+                <label for="ciudad">Ciudad</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="capac" type="text" class="validate">
+                <label for="capac">Capacitación</label>
+              </div>
+            </div>
+           
+            <p class="mg-left">Competencias</p>
+            <div class="row ">
+              <div class="col s12 m6">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Trabajo en equipo</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Resilencia</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Organización</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Creatividad e innovación</span>
+                  </label>
+                </p>
+              </div>
+              <div class="col s12 m6">
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Trabajo en equipo</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Resilencia</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Organización</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" />
+                    <span>Creatividad e innovación</span>
+                  </label>
+                </p>
+              </div>
+            </div>
+            <button id="enviar" class="btn waves-effect waves-light" type="submit" disabled >Submit
+                <i class="material-icons right">send</i>
+              </button>
+                    
+          </form>-->
+        </div>
       </div>
     </div>
+   
   </section>
          
 
@@ -123,8 +221,9 @@
     <script src="../vendors/materialize/js/materialize.min.js"></script>
     <script type="text/javascript" src="../js/init.js"></script>
     <script type="text/javascript" src="../js/app.js"></script>
-    
-   
+    <!--enlazando plugin validate-->
+    <script src="../vendors/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../js/validate.js"></script>
    
 
 </body>
