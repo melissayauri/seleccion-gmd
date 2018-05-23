@@ -9,6 +9,7 @@ $(document).ready(function() {
   
 
   // Initialize Firebase
+  /*
   var config = {
     apiKey: 'AIzaSyDdXkiM8c_LdEJVT6OeyEIfOQ2N7k0sjRU',
     authDomain: 'seleccion-gmd.firebaseapp.com',
@@ -17,5 +18,5 @@ $(document).ready(function() {
     storageBucket: '',
     messagingSenderId: '246386059278'
   };
-  firebase.initializeApp(config);
+  firebase.initializeApp(config);*/
 });

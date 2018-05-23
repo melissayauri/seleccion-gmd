@@ -1,8 +1,8 @@
 $(document).ready(function() {
-  let $loginGoogle = $('#login-gmail');
+ /* let $loginGoogle = $('#login-gmail');
   $loginGoogle.on('click', googleLogin);
   function googleLogin() {
-    /* incorporando la autenticación por gmail */
+    /* incorporando la autenticación por gmail 
     let provider = new firebase.auth.GoogleAuthProvider();
     firebase.auth().signInWithPopup(provider).then((result) => {
       let user = result.user;
@@ -35,20 +35,20 @@ $(document).ready(function() {
     console.log(onlyName);
     let photo = users.photo
     console.log(photo)
-    /* Bienvenida al usuario */
+    /* Bienvenida al usuario 
     let principalName = `<h5 class="white-text mg mg-top center-align">Hola, ${onlyName}</h5>`;
     let principalImage = ` <img src="${photo}" alt="" class="img-profile">`
     $('#root').append(principalName, principalImage);
-    /* Sección del cv- profile */
+    /* Sección del cv- profile 
     let profileImage = ` <img src="${photo}" alt="" class="img">`
     let fullName = `<p class=" center-align">${name}</p>`;
     $('#profile').append(profileImage, fullName);
   });
-});
+});*/
 
  
-/* Incorporando iniciar sesión con Gmail 
-  var provider = new firebase.auth.GoogleAuthProvider();
+/* Incorporando iniciar sesión con Gmail */
+ /* var provider = new firebase.auth.GoogleAuthProvider();
   $('#login-gmail').on('click', function() {
     alert('hola');
     firebase.auth().signInWithPopup(provider).then(function(result) {
@@ -66,5 +66,5 @@ $(document).ready(function() {
       window.location.href = '../views/profile.html';
     } else {
       console.log('usuario no logeado');
-    }
-  });*/
+    }*/
+  });

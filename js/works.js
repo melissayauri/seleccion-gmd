@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   /* variable para el buscador*/
   let $searchInput = $('#search');
   /* validando el ingreso del buscador */
@@ -59,11 +60,11 @@ $(document).ready(function() {
       alert('gdgdg')
     }*/
  
-  /* Colocando el registro: gmail-linkedin */
-  let $login = $('#login');
+  /* Colocando el registro: gmail-linkedin 
+  let $login = $('#registers');
   $login.on('click', login);
   function login() {
-    /* Incorporando el modal de registro */
+    /* Incorporando el modal de registro 
     $containerModal = $('.register');
     console.log('efect');
     let modal = `<div id="register" class=" modal white">
@@ -82,12 +83,12 @@ $(document).ready(function() {
                 </div>`;
     $containerModal.append(modal);
     $('.modal').modal();
-    /* Inicio de sesión con Gmail */
+    /* Inicio de sesión con Gmail 
     let $loginGoogle = $('#login-gmail');
     $loginGoogle.on('click', googleLogin);
     function googleLogin() {
       console.log('btn-gmail');
-      /* incorporando la autenticación por gmail */
+      /* incorporando la autenticación por gmail 
      let provider = new firebase.auth.GoogleAuthProvider();
       firebase.auth().signInWithPopup(provider).then((result) => {
         let user = result.user;
@@ -116,5 +117,5 @@ $(document).ready(function() {
        
       });
     }
-  };
+  };*/
 });
