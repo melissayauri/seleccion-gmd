@@ -12,10 +12,21 @@ var config = {
 
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-      var email = user.email;
-      console.log(email)
-      var userCode = user.uid;
-      $('#user-email-desktop').text(email);
+      /*usuario */
+      console.log(user)
+      let objectUsers = {
+        uid: user.uid,
+        name: user.displayName,
+        mail: user.email,
+        photo: user.photoURL
+      }
+      let photo = ` <img src="${objectUsers.photo}" alt="" class="img-profile">`;
+      /*Creando la rama usuarios en firebase */
+      var firebasePostREsfName = firebase.database().ref('usuarios').child(objectUsers.uid);
+      /* incorporando datos en la rama según el usuario que ingrese */
+      firebasePostREsfName.set(objectUsers);
+      /*Incorporando */
+      $('#root').append(photo);
     }
     });
 });
