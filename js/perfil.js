@@ -27,6 +27,16 @@ var config = {
       firebasePostREsfName.set(objectUsers);
       /*Incorporando */
       $('#root').append(photo);
+      $('#enviar').on('click', function(event) {
+        event.preventDefault();
+        let objectFormul = {
+          universidad: $('#univ').val()
+        }
+      //let universidad = $('#univ').val();
+      var firebaseFormul = firebase.database().ref('usuarios').child(objectUsers.uid);
+      /*rama para el formulario */
+      firebaseFormul.child('formulario').push(objectFormul.universidad);
+      })
     }
     });
 });
