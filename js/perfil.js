@@ -27,6 +27,61 @@ var config = {
       firebasePostREsfName.set(objectUsers);
       /*Incorporando */
       $('#root').append(photo);
+    
+
+      /*validando el formulario */
+
+    //let namePattern = "^[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{3,30}$";
+    //let namePattern = "^[a-z[:space:]]*$";
+    /*
+    let namePattern ="^[a-zA-Z ]+$";
+    function checkInput(idInput, pattern) {
+      return $(idInput).val().match(pattern) ? true : false;
+  }
+    function enableSubmit (idForm) {
+        $(idForm + " #enviar").removeAttr("disabled");
+       
+        //window.location.href = 'view/prueba.html';
+    }
+    
+    function disableSubmit (idForm) {
+        $(idForm + " #enviar").attr("disabled", "disabled");
+        
+    }
+  
+    function checkForm (idForm) {
+        //let $letter = $('#univ, #city');
+        $(idForm + " *").on(" keydown keyup", function() {
+            if (checkInput("#univ", namePattern))
+            {
+                enableSubmit(idForm);
+                
+            } else {
+                disableSubmit(idForm);
+            }
+        });
+        
+    }
+    
+    
+    $(function() {
+        checkForm("#contacto");
+    });
+    
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+      /*enviando el formulario a firebase */
       $('#enviar').on('click', function(event) {
         event.preventDefault();
         let objectFormul = {
@@ -35,8 +90,16 @@ var config = {
       //let universidad = $('#univ').val();
       var firebaseFormul = firebase.database().ref('usuarios').child(objectUsers.uid);
       /*rama para el formulario */
-      firebaseFormul.child('formulario').push(objectFormul.universidad);
+      firebaseFormul.child('formulario').set(objectFormul);
+      window.location.href = '../views/prueba.html';
       })
+      /*termina el if */
     }
+
+
+
+
+
+
     });
 });
